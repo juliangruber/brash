@@ -12,6 +12,8 @@ var argv = optimist
   .default('port', 3000)
   .describe('help', 'Print usage instructions')
   .alias('help', 'h')
+  .describe('debug', 'Debug output')
+  .alias('d', 'debug')
   .argv;
 
 if (argv.help) return optimist.showHelp();
@@ -20,7 +22,7 @@ http.createServer(function (req, res) {
   if (/^\/bundle\.js/.test(req.url)) {
     res.writeHead(200, { 'Content-Type': 'application/javascript' });
     var b = browserify(__dirname + '/../');
-    b.bundle().pipe(res);
+    b.bundle({ debug: argv.debug }).pipe(res);
   } else {
     res.end('<script src="/bundle.js"></script>');
   }
