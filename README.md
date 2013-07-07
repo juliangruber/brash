@@ -11,7 +11,6 @@ Browser-only terminal. Uses
 
 ## implemented
 
-* `fake in-/output: use shell.write('my command\n') in the console.`
 * `builtin: cat`
 
 ## not yet implemented
