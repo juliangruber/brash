@@ -5,7 +5,9 @@ Browser-only terminal. Uses
 [level-fs](https://github.com/juliangruber/level-fs) on top of
 [level-js](https://github.com/maxogden/level.js) for the filesystem.
 
-**WIP**
+## WIP
+
+![screenshot](http://i.cloudup.com/wXx3j5okWZ.png)
 
 ## implemented
 
