@@ -49,6 +49,7 @@ function spawn (_cmd, args, opts) {
 var cmd = {};
 
 cmd.cat = function (args, opts) {
-  var path = opts.cwd + args[0];
+  //var path = opts.cwd + args[0];
+  var path = args[0];
   return fs.createReadStream(path);
 };
