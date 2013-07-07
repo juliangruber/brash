@@ -36,6 +36,7 @@ Usage: brash [OPTIONS]
 Options:
   --port, -p  Port to listen on         [default: 3000]
   --help, -h  Print usage instructions
+  --debug     Debug output
 
 ```
 
